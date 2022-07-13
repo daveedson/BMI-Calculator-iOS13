@@ -47,6 +47,8 @@ class CalculateViewController: UIViewController {
         let convertedbmi = String(format: "%.2f" ,bmi)
         
         print(convertedbmi)
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
     }
 }
 
