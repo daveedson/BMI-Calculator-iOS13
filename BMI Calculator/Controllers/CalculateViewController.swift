@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculateViewController: UIViewController {
     
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
@@ -31,9 +31,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func weightSliderChanged(_ sender: UISlider) {
-        
         let intValue:Int = Int(sender.value)
-        
         weightLabel.text =   String("\(intValue)Kg")
     }
     
